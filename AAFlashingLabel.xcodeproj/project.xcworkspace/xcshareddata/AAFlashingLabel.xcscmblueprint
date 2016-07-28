@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4D1F2E34D7BE55842CA8F9671F363262ED00C853",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4D1F2E34D7BE55842CA8F9671F363262ED00C853" : 0,
+    "BFBBFB2EC92FD85A6C311307E33DCBC76582AAA5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "66A40648-048F-416C-8853-80D16C10E0F9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4D1F2E34D7BE55842CA8F9671F363262ED00C853" : "AAFlashingLabel\/",
+    "BFBBFB2EC92FD85A6C311307E33DCBC76582AAA5" : "AAFlashingLabel\/AAFlashingLabel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AAFlashingLabel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AAFlashingLabel.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AaoIi\/AAFlashingLabel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4D1F2E34D7BE55842CA8F9671F363262ED00C853"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AaoIi\/AAFlashingLabel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFBBFB2EC92FD85A6C311307E33DCBC76582AAA5"
+    }
+  ]
+}
