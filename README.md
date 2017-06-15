@@ -9,23 +9,31 @@ AAFlashingLabel is animated label to switch between two text/attributed text acc
 
 ## How to use AAFlashingLabel ##
 ##### 1) import ```AAFlashingLabel.swift``` into your project <br/>
-#####2) Drag UILabel in Storyboard and from identity inspector change class to : AAFlashingLabel <br/>
-#####3) To Start Blinking Label:<br/><br/>     3.1) Normal Text:<br/>
+##### 2) Drag UILabel in Storyboard and from identity inspector change class to : AAFlashingLabel <br/>
+##### 3) To Start Blinking Label:<br/><br/>     
 
-``// send first text, second text, and time between switching``</br>
-``myLabel.startFlippingLabels(label1Text:String,label2Text:String,duration:NSTimeInterval)``</br>
+#####  3.1) Normal Text:<br/>
+
+```swift
+// send first text, second text, and time between switching
+myLabel.startFlippingLabels(label1Text:String,label2Text:String,duration:NSTimeInterval)
+
+```
 
 ##### 3.2) Attributed Text:<br/> 
 
-``// send first attributed text, second attributed text, and time between switching``</br>
-``myLabel.startFlippingLabels(label1AttributedText:NSMutableAttributedString,label2AttributedText:NSMutableAttributedString,duration:NSTimeInterval)``</br>
+```swift
+// send first attributed text, second attributed text, and time between switching
+myLabel.startFlippingLabels(label1AttributedText:NSMutableAttributedString,label2AttributedText:NSMutableAttributedString,duration:NSTimeInterval)
 
+```
 
 ##### 3) Stop Blinking Labels:<br/> 
 
-``myLabel.stopFlippingLabels()``<br/> 
+```swift
+myLabel.stopFlippingLabels()
 
-
+```
 ## Requierments ##
 * Swift 2.2+
 * IOS 7.0+
