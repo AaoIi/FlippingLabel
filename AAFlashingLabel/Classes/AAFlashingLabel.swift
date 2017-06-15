@@ -10,14 +10,14 @@ import UIKit
 
 class AAFlashingLabel : UILabel {
     
-    private var titleForLabel1 : String!
-    private var titleForLabel2 : String!
-    private var titleForLabel1Attributed : NSMutableAttributedString!
-    private var titleForLabel2Attributed : NSMutableAttributedString!
-    private var duration : NSTimeInterval!
-    private var currentLabel = 0
-    private var timer : NSTimer!
-    private var attributedTextFlag = false
+    fileprivate var titleForLabel1 : String!
+    fileprivate var titleForLabel2 : String!
+    fileprivate var titleForLabel1Attributed : NSMutableAttributedString!
+    fileprivate var titleForLabel2Attributed : NSMutableAttributedString!
+    fileprivate var duration : TimeInterval!
+    fileprivate var currentLabel = 0
+    fileprivate var timer : Timer!
+    fileprivate var attributedTextFlag = false
     
     /**
      This method will flip two string on label.
@@ -26,7 +26,7 @@ class AAFlashingLabel : UILabel {
      - returns: nothing.
      - author: Saad Albasha.
      */
-    func startFlippingLabels(label1Text:String,label2Text:String,duration:NSTimeInterval){
+    func startFlippingLabels(_ label1Text:String,label2Text:String,duration:TimeInterval){
         
         self.titleForLabel1 = label1Text
         self.titleForLabel2 = label2Text
@@ -35,7 +35,7 @@ class AAFlashingLabel : UILabel {
         setLabel1Text()
         attributedTextFlag = false
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(self.setTextForLabel(_:)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(self.setTextForLabel(_:)), userInfo: nil, repeats: true)
         timer.fire()
         
     }
@@ -47,7 +47,7 @@ class AAFlashingLabel : UILabel {
      - returns: nothing.
      - author: Saad Albasha.
      */
-    func startFlippingLabels(label1AttributedText:NSMutableAttributedString,label2AttributedText:NSMutableAttributedString,duration:NSTimeInterval){
+    func startFlippingLabels(_ label1AttributedText:NSMutableAttributedString,label2AttributedText:NSMutableAttributedString,duration:TimeInterval){
         
         self.titleForLabel1Attributed = label1AttributedText
         self.titleForLabel2Attributed = label2AttributedText
@@ -56,7 +56,7 @@ class AAFlashingLabel : UILabel {
         setLabel1Text()
         attributedTextFlag = true
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(self.setTextForLabel(_:)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(self.setTextForLabel(_:)), userInfo: nil, repeats: true)
         timer.fire()
         
     }
@@ -78,7 +78,7 @@ class AAFlashingLabel : UILabel {
     
     
     
-    @objc private func setTextForLabel(timer:NSTimer){
+    @objc fileprivate func setTextForLabel(_ timer:Timer){
         
         if currentLabel == 0 {
             
@@ -99,10 +99,10 @@ class AAFlashingLabel : UILabel {
     
     
     
-    private func setLabel2Text(){
+    fileprivate func setLabel2Text(){
         
         self.alpha = 0
-        UIView.animateKeyframesWithDuration(0.3, delay: 0.0, options: [], animations: {
+        UIView.animateKeyframes(withDuration: 0.3, delay: 0.0, options: [], animations: {
             
             self.alpha = 1
             
@@ -123,10 +123,10 @@ class AAFlashingLabel : UILabel {
     }
     
     
-    private func setLabel1Text(){
+    fileprivate func setLabel1Text(){
         
         self.alpha = 0
-        UIView.animateKeyframesWithDuration(0.3, delay: 0.0, options: [], animations: {
+        UIView.animateKeyframes(withDuration: 0.3, delay: 0.0, options: [], animations: {
             
             self.alpha = 1
             if self.attributedTextFlag == false {

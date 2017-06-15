@@ -28,23 +28,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func flipString(sender: AnyObject) {
+    @IBAction func flipString(_ sender: AnyObject) {
         self.view.endEditing(true)
         
         if firstTextField.text! == "" || secondTextField.text! == "" || durationTextField.text! == ""{
             return
         }
         
-        myLabel.startFlippingLabels(firstTextField.text!, label2Text: secondTextField.text!, duration: NSTimeInterval(durationTextField.text!)!)
+        myLabel.startFlippingLabels(firstTextField.text!, label2Text: secondTextField.text!, duration: TimeInterval(durationTextField.text!)!)
         
         
-        self.flipStringButton.enabled = false
-        self.flipAttributedStringTextButton.enabled = false
+        self.flipStringButton.isEnabled = false
+        self.flipAttributedStringTextButton.isEnabled = false
         self.flipStringButton.alpha = 0.5
         self.flipAttributedStringTextButton.alpha = 0.5
     }
 
-    @IBAction func flipAttributedString(sender: AnyObject) {
+    @IBAction func flipAttributedString(_ sender: AnyObject) {
         self.view.endEditing(true)
 
         if firstTextField.text! == "" || secondTextField.text! == "" || durationTextField.text! == ""{
@@ -54,40 +54,40 @@ class ViewController: UIViewController {
         let fullAirlineName = "\(firstTextField.text!)"
         let airlineIataAndFlightNumber = "\(firstTextField.text!)"
         let finalAttributedText = NSMutableAttributedString(string:fullAirlineName as String)
-        finalAttributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.blackColor(), range: NSMakeRange(0,fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count))
-        finalAttributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(17), range: NSMakeRange(0,fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count))
-        finalAttributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor(), range: NSMakeRange((fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count),airlineIataAndFlightNumber.characters.count))
-        finalAttributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(17), range: NSMakeRange((fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count),airlineIataAndFlightNumber.characters.count))
+        finalAttributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.black, range: NSMakeRange(0,fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count))
+        finalAttributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 17), range: NSMakeRange(0,fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count))
+        finalAttributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSMakeRange((fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count),airlineIataAndFlightNumber.characters.count))
+        finalAttributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 17), range: NSMakeRange((fullAirlineName.characters.count-airlineIataAndFlightNumber.characters.count),airlineIataAndFlightNumber.characters.count))
         
         
         let fullAirlineName1 = "\(secondTextField.text!)"
         let airlineIataAndFlightNumber1 = "\(secondTextField.text!)"
         let finalAttributedText1 = NSMutableAttributedString(string:fullAirlineName1 as String)
-        finalAttributedText1.addAttribute(NSForegroundColorAttributeName, value: UIColor.blackColor(), range: NSMakeRange(0,fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count))
-        finalAttributedText1.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(17), range: NSMakeRange(0,fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count))
-        finalAttributedText1.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange((fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count),airlineIataAndFlightNumber1.characters.count))
-        finalAttributedText1.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(17), range: NSMakeRange((fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count),airlineIataAndFlightNumber1.characters.count))
+        finalAttributedText1.addAttribute(NSForegroundColorAttributeName, value: UIColor.black, range: NSMakeRange(0,fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count))
+        finalAttributedText1.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 17), range: NSMakeRange(0,fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count))
+        finalAttributedText1.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSMakeRange((fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count),airlineIataAndFlightNumber1.characters.count))
+        finalAttributedText1.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 17), range: NSMakeRange((fullAirlineName1.characters.count-airlineIataAndFlightNumber1.characters.count),airlineIataAndFlightNumber1.characters.count))
         
-        myLabel.startFlippingLabels(finalAttributedText, label2AttributedText: finalAttributedText1, duration: NSTimeInterval(durationTextField.text!)!)
+        myLabel.startFlippingLabels(finalAttributedText, label2AttributedText: finalAttributedText1, duration: TimeInterval(durationTextField.text!)!)
         
-        self.flipStringButton.enabled = false
-        self.flipAttributedStringTextButton.enabled = false
+        self.flipStringButton.isEnabled = false
+        self.flipAttributedStringTextButton.isEnabled = false
         self.flipStringButton.alpha = 0.5
         self.flipAttributedStringTextButton.alpha = 0.5
     }
-    @IBAction func stopFlipping(sender: AnyObject) {
+    @IBAction func stopFlipping(_ sender: AnyObject) {
         
         
         myLabel.stopFlippingLabels()
         
-        self.flipStringButton.enabled = true
-        self.flipAttributedStringTextButton.enabled = true
+        self.flipStringButton.isEnabled = true
+        self.flipAttributedStringTextButton.isEnabled = true
         self.flipStringButton.alpha = 1.0
         self.flipAttributedStringTextButton.alpha = 1.0
         
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         self.view.endEditing(true)
         
