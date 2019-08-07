@@ -14,7 +14,7 @@
 		CE4241F01CFD8CA300C143B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4241EE1CFD8CA300C143B8 /* LaunchScreen.storyboard */; };
 		CE4241FB1CFD8CA300C143B8 /* AAFlashingLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4241FA1CFD8CA300C143B8 /* AAFlashingLabelTests.swift */; };
 		CE4242061CFD8CA300C143B8 /* AAFlashingLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4242051CFD8CA300C143B8 /* AAFlashingLabelUITests.swift */; };
-		CE4242141CFD8CC600C143B8 /* AAFlashingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4242131CFD8CC600C143B8 /* AAFlashingLabel.swift */; };
+		CE4242141CFD8CC600C143B8 /* FlashingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4242131CFD8CC600C143B8 /* FlashingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		CE4242011CFD8CA300C143B8 /* AAFlashingLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAFlashingLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4242051CFD8CA300C143B8 /* AAFlashingLabelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAFlashingLabelUITests.swift; sourceTree = "<group>"; };
 		CE4242071CFD8CA300C143B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE4242131CFD8CC600C143B8 /* AAFlashingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAFlashingLabel.swift; path = Classes/AAFlashingLabel.swift; sourceTree = "<group>"; };
+		CE4242131CFD8CC600C143B8 /* FlashingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlashingLabel.swift; path = Classes/FlashingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		CE4242151CFD8CC900C143B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE4242131CFD8CC600C143B8 /* AAFlashingLabel.swift */,
+				CE4242131CFD8CC600C143B8 /* FlashingLabel.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				TargetAttributes = {
 					CE4241E11CFD8CA300C143B8 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Z27X2MWLK6;
 						LastSwiftMigration = 0830;
 					};
 					CE4241F51CFD8CA300C143B8 = {
@@ -226,6 +225,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -275,7 +275,7 @@
 			files = (
 				CE4241E81CFD8CA300C143B8 /* ViewController.swift in Sources */,
 				CE4241E61CFD8CA300C143B8 /* AppDelegate.swift in Sources */,
-				CE4242141CFD8CC600C143B8 /* AAFlashingLabel.swift in Sources */,
+				CE4242141CFD8CC600C143B8 /* FlashingLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +424,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z27X2MWLK6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AAFlashingLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AAFlashingLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -440,13 +440,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z27X2MWLK6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AAFlashingLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AAFlashingLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
