@@ -31,10 +31,10 @@ public class FlashingLabel : UILabel {
      - returns: nothing.
      - author: Saad Albasha.
      */
-    public func startFlippingText(_ label1Text:String?,label2Text:String?,duration:TimeInterval){
+    public func startFlippingText(firstText:String?,secondText:String?,duration:TimeInterval){
         
-        self.titleForLabel1 = label1Text
-        self.titleForLabel2 = label2Text
+        self.titleForLabel1 = firstText
+        self.titleForLabel2 = secondText
         self.duration = duration
         
         setLabel1TextAnimated()
@@ -50,10 +50,10 @@ public class FlashingLabel : UILabel {
      - returns: nothing.
      - author: Saad Albasha.
      */
-    public func startFlippingText(_ label1AttributedText:NSMutableAttributedString,label2AttributedText:NSMutableAttributedString,duration:TimeInterval){
+    public func startFlippingText(firstAttributedText:NSMutableAttributedString,secondAttributedText:NSMutableAttributedString,duration:TimeInterval){
         
-        self.titleForLabel1Attributed = label1AttributedText
-        self.titleForLabel2Attributed = label2AttributedText
+        self.titleForLabel1Attributed = firstAttributedText
+        self.titleForLabel2Attributed = secondAttributedText
         self.duration = duration
         
         setLabel1TextAnimated()

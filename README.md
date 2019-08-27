@@ -1,42 +1,62 @@
 # AAFlashingLabel
 
 ## Description
-AAFlashingLabel is animated label to switch between two text/attributed text according to time intervals.
+FlashingLabel is animated label to switch between two text/attributed text according to time intervals.
 
 
 ## Preview Demo
 <img src="https://lh6.googleusercontent.com/Y8usWtcgz_3Hlcy8TYvKLef_8tggB0WK3W6XlDEKe_nCe8skerYqyA=w373-h642-p-b1-c0x00999999">
 
-## How to use AAFlashingLabel ##
-##### 1) import ```AAFlashingLabel.swift``` into your project <br/>
-##### 2) Drag UILabel in Storyboard and from identity inspector change class to : AAFlashingLabel <br/>
-##### 3) To Start Blinking Label:<br/><br/>     
+## Installation
 
-#####  3.1) Normal Text:<br/>
+### CocoaPods
+[CocoaPods][] is a dependency manager for Cocoa projects. To install FlashingLabel with CocoaPods:
+
+1. Make sure CocoaPods is [installed][CocoaPods Installation].
+
+2. Update your Podfile to include the following:
+
+``` ruby
+use_frameworks!
+pod 'FlashingLabel'
+```
+
+3. Run `pod install`.
+
+[CocoaPods]: https://cocoapods.org
+[CocoaPods Installation]: https://guides.cocoapods.org/using/getting-started.html#getting-started
+
+4. In your code import FlashingLabel like so:
+`import FlashingLabel`
+
+
+## How to use AAFlashingLabel ##
+##### 1) import FlashingLabel <br/>
+##### 2) Drag UILabel in Storyboard and from identity inspector change class to : FlashingLabel <br/>
+
+##### Flipping String<br/>
 
 ```swift
 // send first text, second text, and time between switching
-myLabel.startFlippingLabels(label1Text:String,label2Text:String,duration:NSTimeInterval)
-
+public func startFlippingText(firstText:String?,secondText:String?,duration:TimeInterval)
 ```
 
-##### 3.2) Attributed Text:<br/> 
+##### Flipping Attributed String:<br/> 
 
 ```swift
 // send first attributed text, second attributed text, and time between switching
-myLabel.startFlippingLabels(label1AttributedText:NSMutableAttributedString,label2AttributedText:NSMutableAttributedString,duration:NSTimeInterval)
-
+public func startFlippingText(firstAttributedText:NSMutableAttributedString,secondAttributedText:NSMutableAttributedString,duration:TimeInterval)
 ```
 
-##### 3) Stop Blinking Labels:<br/> 
+##### Stop Flipping Label:<br/> 
 
 ```swift
-myLabel.stopFlippingLabels()
+public func stopFlippingText()
 
 ```
 ## Requierments ##
-* Swift 2.2+
-* IOS 7.0+
+* Swift 5.0+
+* IOS 8.0+
 
 ## License ##
 

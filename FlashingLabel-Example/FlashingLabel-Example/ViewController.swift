@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         let duration = TimeInterval(durationTextField.text ?? "1" ) ?? 1
         
-        previewLabel.startFlippingText(firstTextField.text, label2Text: secondTextField.text, duration: duration)
+        previewLabel.startFlippingText(firstText: firstTextField.text, secondText: secondTextField.text, duration: duration)
         
         self.disableViews()
     }
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 
         let duration = TimeInterval(durationTextField.text ?? "1" ) ?? 1
         
-        previewLabel.startFlippingText(firstAttText, label2AttributedText: secondAttText, duration: duration)
+        previewLabel.startFlippingText(firstAttributedText: firstAttText, secondAttributedText: secondAttText, duration: duration)
         
         self.disableViews()
 

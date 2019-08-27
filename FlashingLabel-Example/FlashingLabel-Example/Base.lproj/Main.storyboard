@@ -22,34 +22,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-pg-7bm" customClass="FlashingLabel" customModule="FlashingLabel">
-                                <rect key="frame" x="20" y="375" width="374" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-pg-7bm" customClass="FlashingLabel" customModule="FlashingLabel">
+                                <rect key="frame" x="20" y="405" width="374" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f5-Rq-AfP">
-                                <rect key="frame" x="20" y="225" width="374" height="30"/>
+                                <rect key="frame" x="20" y="225" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.65150545140000005" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="whq-b6-JJf"/>
+                                    <constraint firstAttribute="height" constant="40" id="whq-b6-JJf"/>
                                 </constraints>
-                                <state key="normal" title="Flip String Text">
+                                <state key="normal" title="Flip String">
                                     <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="flipString:" destination="gbg-fA-dLN" eventType="touchUpInside" id="ohS-oo-Pmr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBQ-Wd-lPE">
-                                <rect key="frame" x="20" y="275" width="374" height="30"/>
+                                <rect key="frame" x="20" y="285" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.65150545140000005" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="VWl-8m-Zmd"/>
+                                    <constraint firstAttribute="height" constant="40" id="VWl-8m-Zmd"/>
                                 </constraints>
-                                <state key="normal" title="Flip Attributed String Text">
+                                <state key="normal" title="Flip Attributed String">
                                     <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="flipAttributedString:" destination="gbg-fA-dLN" eventType="touchUpInside" id="8Gm-dn-9cJ"/>
                                 </connections>
@@ -65,14 +75,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2u-Qr-FlO">
-                                <rect key="frame" x="20" y="325" width="374" height="30"/>
+                                <rect key="frame" x="20" y="345" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.65150545140000005" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="28h-dg-Agd"/>
+                                    <constraint firstAttribute="height" constant="40" id="28h-dg-Agd"/>
                                 </constraints>
                                 <state key="normal" title="Stop Flipping">
                                     <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="stopFlipping:" destination="gbg-fA-dLN" eventType="touchUpInside" id="din-c9-Evq"/>
                                 </connections>
