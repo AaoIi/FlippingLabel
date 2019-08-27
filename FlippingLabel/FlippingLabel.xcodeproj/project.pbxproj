@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF8D3EB82315584E000BD8CA /* FlashingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8D3EB62315584D000BD8CA /* FlashingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF8D3EBF23155859000BD8CA /* FlashingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D3EBE23155859000BD8CA /* FlashingLabel.swift */; };
+		EF8D3EED23156CB3000BD8CA /* FlippingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8D3EEB23156CB3000BD8CA /* FlippingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF8D3EF423156CF1000BD8CA /* FlippingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D3EF323156CF1000BD8CA /* FlippingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF8D3EB32315584D000BD8CA /* FlashingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlashingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF8D3EB62315584D000BD8CA /* FlashingLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashingLabel.h; sourceTree = "<group>"; };
-		EF8D3EB72315584E000BD8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF8D3EBE23155859000BD8CA /* FlashingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashingLabel.swift; sourceTree = "<group>"; };
+		EF8D3EE823156CB3000BD8CA /* FlippingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlippingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8D3EEB23156CB3000BD8CA /* FlippingLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippingLabel.h; sourceTree = "<group>"; };
+		EF8D3EEC23156CB3000BD8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8D3EF323156CF1000BD8CA /* FlippingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlippingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EF8D3EB02315584D000BD8CA /* Frameworks */ = {
+		EF8D3EE523156CB3000BD8CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,98 +29,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF8D3EA92315584D000BD8CA = {
+		EF8D3EDE23156CB3000BD8CA = {
 			isa = PBXGroup;
 			children = (
-				EF8D3EB52315584D000BD8CA /* FlashingLabel */,
-				EF8D3EB42315584D000BD8CA /* Products */,
+				EF8D3EEA23156CB3000BD8CA /* FlippingLabel */,
+				EF8D3EE923156CB3000BD8CA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EF8D3EB42315584D000BD8CA /* Products */ = {
+		EF8D3EE923156CB3000BD8CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF8D3EB32315584D000BD8CA /* FlashingLabel.framework */,
+				EF8D3EE823156CB3000BD8CA /* FlippingLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF8D3EB52315584D000BD8CA /* FlashingLabel */ = {
+		EF8D3EEA23156CB3000BD8CA /* FlippingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				EF8D3EB62315584D000BD8CA /* FlashingLabel.h */,
-				EF8D3EBE23155859000BD8CA /* FlashingLabel.swift */,
-				EF8D3EB72315584E000BD8CA /* Info.plist */,
+				EF8D3EEB23156CB3000BD8CA /* FlippingLabel.h */,
+				EF8D3EF323156CF1000BD8CA /* FlippingLabel.swift */,
+				EF8D3EEC23156CB3000BD8CA /* Info.plist */,
 			);
-			path = FlashingLabel;
+			path = FlippingLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EF8D3EAE2315584D000BD8CA /* Headers */ = {
+		EF8D3EE323156CB3000BD8CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF8D3EB82315584E000BD8CA /* FlashingLabel.h in Headers */,
+				EF8D3EED23156CB3000BD8CA /* FlippingLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EF8D3EB22315584D000BD8CA /* FlashingLabel */ = {
+		EF8D3EE723156CB3000BD8CA /* FlippingLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF8D3EBB2315584E000BD8CA /* Build configuration list for PBXNativeTarget "FlashingLabel" */;
+			buildConfigurationList = EF8D3EF023156CB3000BD8CA /* Build configuration list for PBXNativeTarget "FlippingLabel" */;
 			buildPhases = (
-				EF8D3EAE2315584D000BD8CA /* Headers */,
-				EF8D3EAF2315584D000BD8CA /* Sources */,
-				EF8D3EB02315584D000BD8CA /* Frameworks */,
-				EF8D3EB12315584D000BD8CA /* Resources */,
+				EF8D3EE323156CB3000BD8CA /* Headers */,
+				EF8D3EE423156CB3000BD8CA /* Sources */,
+				EF8D3EE523156CB3000BD8CA /* Frameworks */,
+				EF8D3EE623156CB3000BD8CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FlashingLabel;
-			productName = FlashingLabel;
-			productReference = EF8D3EB32315584D000BD8CA /* FlashingLabel.framework */;
+			name = FlippingLabel;
+			productName = FlippingLabel;
+			productReference = EF8D3EE823156CB3000BD8CA /* FlippingLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EF8D3EAA2315584D000BD8CA /* Project object */ = {
+		EF8D3EDF23156CB3000BD8CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Saad Albasha";
 				TargetAttributes = {
-					EF8D3EB22315584D000BD8CA = {
+					EF8D3EE723156CB3000BD8CA = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
 					};
 				};
 			};
-			buildConfigurationList = EF8D3EAD2315584D000BD8CA /* Build configuration list for PBXProject "FlashingLabel" */;
+			buildConfigurationList = EF8D3EE223156CB3000BD8CA /* Build configuration list for PBXProject "FlippingLabel" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EF8D3EA92315584D000BD8CA;
-			productRefGroup = EF8D3EB42315584D000BD8CA /* Products */;
+			mainGroup = EF8D3EDE23156CB3000BD8CA;
+			productRefGroup = EF8D3EE923156CB3000BD8CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF8D3EB22315584D000BD8CA /* FlashingLabel */,
+				EF8D3EE723156CB3000BD8CA /* FlippingLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EF8D3EB12315584D000BD8CA /* Resources */ = {
+		EF8D3EE623156CB3000BD8CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,18 +130,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EF8D3EAF2315584D000BD8CA /* Sources */ = {
+		EF8D3EE423156CB3000BD8CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF8D3EBF23155859000BD8CA /* FlashingLabel.swift in Sources */,
+				EF8D3EF423156CF1000BD8CA /* FlippingLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EF8D3EB92315584E000BD8CA /* Debug */ = {
+		EF8D3EEE23156CB3000BD8CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		EF8D3EBA2315584E000BD8CA /* Release */ = {
+		EF8D3EEF23156CB3000BD8CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +263,7 @@
 			};
 			name = Release;
 		};
-		EF8D3EBC2315584E000BD8CA /* Debug */ = {
+		EF8D3EF123156CB3000BD8CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -273,7 +273,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FlashingLabel/Info.plist;
+				INFOPLIST_FILE = FlippingLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -281,7 +281,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaoii.FlashingLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaoii.FlippingLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -290,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		EF8D3EBD2315584E000BD8CA /* Release */ = {
+		EF8D3EF223156CB3000BD8CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -300,7 +300,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FlashingLabel/Info.plist;
+				INFOPLIST_FILE = FlippingLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaoii.FlashingLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaoii.FlippingLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF8D3EAD2315584D000BD8CA /* Build configuration list for PBXProject "FlashingLabel" */ = {
+		EF8D3EE223156CB3000BD8CA /* Build configuration list for PBXProject "FlippingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF8D3EB92315584E000BD8CA /* Debug */,
-				EF8D3EBA2315584E000BD8CA /* Release */,
+				EF8D3EEE23156CB3000BD8CA /* Debug */,
+				EF8D3EEF23156CB3000BD8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF8D3EBB2315584E000BD8CA /* Build configuration list for PBXNativeTarget "FlashingLabel" */ = {
+		EF8D3EF023156CB3000BD8CA /* Build configuration list for PBXNativeTarget "FlippingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF8D3EBC2315584E000BD8CA /* Debug */,
-				EF8D3EBD2315584E000BD8CA /* Release */,
+				EF8D3EF123156CB3000BD8CA /* Debug */,
+				EF8D3EF223156CB3000BD8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EF8D3EAA2315584D000BD8CA /* Project object */;
+	rootObject = EF8D3EDF23156CB3000BD8CA /* Project object */;
 }

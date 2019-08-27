@@ -1,7 +1,7 @@
-# FlashingLabel
+# FlippingLabel
 
 ## Description
-FlashingLabel is animated label to switch between two text/attributed text according to time intervals.
+FlippingLabel is animated label to switch between two text/attributed text according to time intervals.
 
 
 ## Preview Demo
@@ -10,7 +10,7 @@ FlashingLabel is animated label to switch between two text/attributed text accor
 ## Installation
 
 ### CocoaPods
-[CocoaPods][] is a dependency manager for Cocoa projects. To install FlashingLabel with CocoaPods:
+[CocoaPods][] is a dependency manager for Cocoa projects. To install FlippingLabel with CocoaPods:
 
 1. Make sure CocoaPods is [installed][CocoaPods Installation].
 
@@ -18,7 +18,7 @@ FlashingLabel is animated label to switch between two text/attributed text accor
 
 ``` ruby
 use_frameworks!
-pod 'FlashingLabel'
+pod 'FlippingLabel'
 ```
 
 3. Run `pod install`.
@@ -26,13 +26,13 @@ pod 'FlashingLabel'
 [CocoaPods]: https://cocoapods.org
 [CocoaPods Installation]: https://guides.cocoapods.org/using/getting-started.html#getting-started
 
-4. In your code import FlashingLabel like so:
-`import FlashingLabel`
+4. In your code import FlippingLabel like so:
+`import FlippingLabel`
 
 
-## How to use AAFlashingLabel ##
-##### 1) import FlashingLabel <br/>
-##### 2) Drag UILabel in Storyboard and from identity inspector change class to : FlashingLabel <br/>
+## How to use FlippingLabel ##
+##### 1) import FlippingLabel <br/>
+##### 2) Drag UILabel in Storyboard and from identity inspector change class to : FlippingLabel <br/>
 
 ##### Flipping String<br/>
 

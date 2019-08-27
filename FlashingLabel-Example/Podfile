@@ -7,6 +7,6 @@ target 'FlashingLabel-Example' do
 
   # Pods for FlashingLabel-Example
 
-  pod 'FlashingLabel', :path => "../FlashingLabel/"
+  pod 'FlippingLabel', :path => "../FlippingLabel/"
 
 end

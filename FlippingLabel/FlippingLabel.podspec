@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint FlashingLabel.podspec' to ensure this is a
+#  Be sure to run `pod spec lint FlippingLabel.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,13 +15,13 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "FlashingLabel"
-  spec.version      = "1.0.0"
+  spec.name         = "FlippingLabel"
+  spec.version      = "1.0.1"
   spec.summary      = "A blinking / flashing or switching animated label, changes text for time intervals - Swift"
 
   spec.description  = "FlashingLabel is animated label to switch between two text/attributed text according to time intervals."
-  spec.homepage     = "https://github.com/AaoIi/FlashingLabel"
-  spec.screenshots  = 'https://github.com/AaoIi/FlashingLabel/blob/master/FlashingLabel-Demo.gif?raw=true'
+  spec.homepage     = "https://github.com/AaoIi/FlippingLabel"
+  spec.screenshots  = 'https://github.com/AaoIi/FlippingLabel/blob/master/FlashingLabel-Demo.gif?raw=true'
 
   spec.license      = "MIT"
 
@@ -38,9 +38,9 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "https://github.com/AaoIi/FlashingLabel.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/AaoIi/FlippingLabel.git", :tag => "1.0.1" }
 
-  spec.source_files  = 'FlashingLabel/**/*.swift','FlashingLabel/**/*.h'
+  spec.source_files  = 'FlippingLabel/**/*.swift','FlippingLabel/**/*.h'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

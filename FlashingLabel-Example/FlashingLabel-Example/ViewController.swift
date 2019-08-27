@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import FlashingLabel
+import FlippingLabel
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var previewLabel: FlashingLabel!
+    @IBOutlet weak var previewLabel: FlippingLabel!
     @IBOutlet var firstTextField: UITextField!
     @IBOutlet var secondTextField: UITextField!
     @IBOutlet var flipStringButton: UIButton!

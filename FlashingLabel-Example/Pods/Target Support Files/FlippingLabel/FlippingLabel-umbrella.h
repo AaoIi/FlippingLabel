@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "FlashingLabel.h"
+#import "FlippingLabel.h"
 
-FOUNDATION_EXPORT double FlashingLabelVersionNumber;
-FOUNDATION_EXPORT const unsigned char FlashingLabelVersionString[];
+FOUNDATION_EXPORT double FlippingLabelVersionNumber;
+FOUNDATION_EXPORT const unsigned char FlippingLabelVersionString[];
 

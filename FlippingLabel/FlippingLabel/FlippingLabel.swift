@@ -1,6 +1,6 @@
 //
-//  FlashingLabel.swift
-//  FlashingLabel
+//  FlippingLabel.swift
+//  FlippingLabel
 //
 //  Created by Saad Albasha on 5/31/16.
 //  Copyright © 2016 AaoIi. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FlashingLabel : UILabel {
+public class FlippingLabel : UILabel {
     
     //variables
     private var titleForLabel1 : String?
