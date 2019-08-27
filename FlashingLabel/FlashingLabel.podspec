@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.description  = "FlashingLabel is animated label to switch between two text/attributed text according to time intervals."
   spec.homepage     = "https://github.com/AaoIi/FlashingLabel"
-  spec.screenshots  = 'https://camo.githubusercontent.com/446aa2e994eebf2723f7e48fe707836002ef82cd/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f59387573577463677a5f33486c6379385459764b4c65665f387467674230574b335736586c44454b655f6e436538736b6572597179413d773337332d683634322d702d62312d6330783030393939393939'
+  spec.screenshots  = 'https://github.com/AaoIi/FlashingLabel/blob/master/FlashingLabel-Demo.gif?raw=true'
 
   spec.license      = "MIT"
 

@@ -1,11 +1,11 @@
-# AAFlashingLabel
+# FlashingLabel
 
 ## Description
 FlashingLabel is animated label to switch between two text/attributed text according to time intervals.
 
 
 ## Preview Demo
-<img src="https://lh6.googleusercontent.com/Y8usWtcgz_3Hlcy8TYvKLef_8tggB0WK3W6XlDEKe_nCe8skerYqyA=w373-h642-p-b1-c0x00999999">
+<img src="https://github.com/AaoIi/FlashingLabel/blob/master/FlashingLabel-Demo.gif?raw=true">
 
 ## Installation
 
