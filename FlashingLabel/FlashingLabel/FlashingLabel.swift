@@ -11,10 +11,10 @@ import UIKit
 public class FlashingLabel : UILabel {
     
     //variables
-    private var titleForLabel1 : String!
-    private var titleForLabel2 : String!
-    private var titleForLabel1Attributed : NSMutableAttributedString!
-    private var titleForLabel2Attributed : NSMutableAttributedString!
+    private var titleForLabel1 : String?
+    private var titleForLabel2 : String?
+    private var titleForLabel1Attributed : NSMutableAttributedString?
+    private var titleForLabel2Attributed : NSMutableAttributedString?
     
     private var duration : TimeInterval!
     private var currentLabel = 0
@@ -31,7 +31,7 @@ public class FlashingLabel : UILabel {
      - returns: nothing.
      - author: Saad Albasha.
      */
-    public func startFlippingText(_ label1Text:String,label2Text:String,duration:TimeInterval){
+    public func startFlippingText(_ label1Text:String?,label2Text:String?,duration:TimeInterval){
         
         self.titleForLabel1 = label1Text
         self.titleForLabel2 = label2Text

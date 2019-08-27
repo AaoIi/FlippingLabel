@@ -1,0 +1,16 @@
+PODS:
+  - FlashingLabel (1.0.0)
+
+DEPENDENCIES:
+  - FlashingLabel (from `../FlashingLabel/`)
+
+EXTERNAL SOURCES:
+  FlashingLabel:
+    :path: "../FlashingLabel/"
+
+SPEC CHECKSUMS:
+  FlashingLabel: 59864185be171fab60efabc577441432bb3844eb
+
+PODFILE CHECKSUM: a43387cc528970421bee8552d22b19d7b65993cd
+
+COCOAPODS: 1.7.2

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z9L-pH-X6K">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="yzJ-L6-Q8Q">
+            <objects>
+                <viewController id="gbg-fA-dLN" customClass="ViewController" customModule="FlashingLabel_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ENL-Hy-c5t"/>
+                        <viewControllerLayoutGuide type="bottom" id="mky-vP-sdU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TRN-pN-ele">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-pg-7bm" customClass="FlashingLabel" customModule="FlashingLabel">
+                                <rect key="frame" x="20" y="375" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f5-Rq-AfP">
+                                <rect key="frame" x="20" y="225" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.65150545140000005" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="whq-b6-JJf"/>
+                                </constraints>
+                                <state key="normal" title="Flip String Text">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipString:" destination="gbg-fA-dLN" eventType="touchUpInside" id="ohS-oo-Pmr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBQ-Wd-lPE">
+                                <rect key="frame" x="20" y="275" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.65150545140000005" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VWl-8m-Zmd"/>
+                                </constraints>
+                                <state key="normal" title="Flip Attributed String Text">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipAttributedString:" destination="gbg-fA-dLN" eventType="touchUpInside" id="8Gm-dn-9cJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Text " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-GN-8cd">
+                                <rect key="frame" x="20" y="109" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Second Text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPA-Nt-CTq">
+                                <rect key="frame" x="20" y="147" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2u-Qr-FlO">
+                                <rect key="frame" x="20" y="325" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.65150545140000005" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="28h-dg-Agd"/>
+                                </constraints>
+                                <state key="normal" title="Stop Flipping">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopFlipping:" destination="gbg-fA-dLN" eventType="touchUpInside" id="din-c9-Evq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Duration" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35d-8S-aXU">
+                                <rect key="frame" x="20" y="185" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j2u-Qr-FlO" secondAttribute="trailing" constant="20" id="14G-JS-e3p"/>
+                            <constraint firstItem="Ob0-GN-8cd" firstAttribute="leading" secondItem="TRN-pN-ele" secondAttribute="leading" constant="20" id="5BZ-pn-xi0"/>
+                            <constraint firstAttribute="trailing" secondItem="jBQ-Wd-lPE" secondAttribute="trailing" constant="20" id="5j8-pQ-KCE"/>
+                            <constraint firstItem="YPA-Nt-CTq" firstAttribute="leading" secondItem="TRN-pN-ele" secondAttribute="leading" constant="20" id="6jX-Ee-7gy"/>
+                            <constraint firstItem="y6x-pg-7bm" firstAttribute="top" secondItem="j2u-Qr-FlO" secondAttribute="bottom" constant="20" id="71B-yU-m98"/>
+                            <constraint firstItem="2f5-Rq-AfP" firstAttribute="leading" secondItem="TRN-pN-ele" secondAttribute="leading" constant="20" id="BG7-tD-w2X"/>
+                            <constraint firstItem="jBQ-Wd-lPE" firstAttribute="leading" secondItem="TRN-pN-ele" secondAttribute="leading" constant="20" id="Kd5-or-01C"/>
+                            <constraint firstItem="Ob0-GN-8cd" firstAttribute="top" secondItem="Dr9-ks-SBW" secondAttribute="top" constant="21" id="LYm-A7-JlW"/>
+                            <constraint firstItem="jBQ-Wd-lPE" firstAttribute="top" secondItem="2f5-Rq-AfP" secondAttribute="bottom" constant="20" id="Lki-b4-swL"/>
+                            <constraint firstItem="YPA-Nt-CTq" firstAttribute="top" secondItem="Ob0-GN-8cd" secondAttribute="bottom" constant="8" id="Nez-mM-CFf"/>
+                            <constraint firstAttribute="trailing" secondItem="Ob0-GN-8cd" secondAttribute="trailing" constant="20" id="Tpq-RK-DCY"/>
+                            <constraint firstItem="y6x-pg-7bm" firstAttribute="trailing" secondItem="j2u-Qr-FlO" secondAttribute="trailing" id="UxO-Rk-8He"/>
+                            <constraint firstItem="j2u-Qr-FlO" firstAttribute="top" secondItem="jBQ-Wd-lPE" secondAttribute="bottom" constant="20" id="Vhf-n0-sn4"/>
+                            <constraint firstAttribute="trailing" secondItem="2f5-Rq-AfP" secondAttribute="trailing" constant="20" id="Wos-wR-D99"/>
+                            <constraint firstItem="2f5-Rq-AfP" firstAttribute="top" secondItem="35d-8S-aXU" secondAttribute="bottom" constant="10" id="dPC-ar-oxC"/>
+                            <constraint firstItem="y6x-pg-7bm" firstAttribute="height" secondItem="j2u-Qr-FlO" secondAttribute="height" id="kVa-Gp-HI8"/>
+                            <constraint firstItem="35d-8S-aXU" firstAttribute="top" secondItem="YPA-Nt-CTq" secondAttribute="bottom" constant="8" id="koY-Az-YeF"/>
+                            <constraint firstAttribute="trailing" secondItem="35d-8S-aXU" secondAttribute="trailing" constant="20" id="nlm-PL-f1c"/>
+                            <constraint firstItem="y6x-pg-7bm" firstAttribute="leading" secondItem="j2u-Qr-FlO" secondAttribute="leading" id="qeZ-Rr-VV4"/>
+                            <constraint firstItem="35d-8S-aXU" firstAttribute="leading" secondItem="TRN-pN-ele" secondAttribute="leading" constant="20" id="szQ-Ar-cD6"/>
+                            <constraint firstItem="j2u-Qr-FlO" firstAttribute="leading" secondItem="TRN-pN-ele" secondAttribute="leading" constant="20" id="uiG-g3-QGH"/>
+                            <constraint firstAttribute="trailing" secondItem="YPA-Nt-CTq" secondAttribute="trailing" constant="20" id="y9J-ui-Mga"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dr9-ks-SBW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4gd-HW-5AX"/>
+                    <connections>
+                        <outlet property="durationTextField" destination="35d-8S-aXU" id="HzR-lg-Clq"/>
+                        <outlet property="firstTextField" destination="Ob0-GN-8cd" id="Emg-5s-DlT"/>
+                        <outlet property="flipAttributedStringTextButton" destination="jBQ-Wd-lPE" id="c2q-Qs-isx"/>
+                        <outlet property="flipStringButton" destination="2f5-Rq-AfP" id="mGO-OC-Qf7"/>
+                        <outlet property="previewLabel" destination="y6x-pg-7bm" id="vsE-ph-hYm"/>
+                        <outlet property="secondTextField" destination="YPA-Nt-CTq" id="d72-rK-8yJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2D-OM-itI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7XE-Oi-Fms">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z9L-pH-X6K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="81W-pG-bcG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gbg-fA-dLN" kind="relationship" relationship="rootViewController" id="0HT-uk-Gzd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8J-r4-3VV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="285"/>
+        </scene>
+    </scenes>
+</document>
